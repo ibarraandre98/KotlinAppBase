@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">My Application1</string>
+    <string name="button_kat_id">Button by findviewbyid</string>
+    <string name="button_kat_kat">Button by kat</string>
+    <string name="button_intent_extras">Button Intent Extras</string>
+    <string name="button_intent_flags">Button Intent Flags</string>
+    <string name="button_intent_object">Button Intent Object</string>
+    <string name="button_go_back">Go Back</string>
+    <string name="button_take_picture">Take a picture</string>
 </resources>

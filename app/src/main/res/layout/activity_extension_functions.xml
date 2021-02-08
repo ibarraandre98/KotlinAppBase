@@ -4,67 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.ClicksEventsActivity">
+    android:id="@+id/container"
+    tools:context=".activities.ExtensionFunctionsActivity">
 
     <Button
-        android:id="@+id/btnClickXML"
+        android:id="@+id/buttonToast"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:text="Button"
-        android:onClick="xmlClick"
+        android:text="Toast"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnClickInLine"
+        android:id="@+id/buttonSnackBar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:text="Button"
+        android:text="SnackBar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnClickXML" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonToast" />
 
     <Button
-        android:id="@+id/btnClickMulti1"
+        android:id="@+id/buttonLoadByUrl"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:text="Button"
+        android:text="Load By Url"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnClickInLine" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonSnackBar" />
 
     <Button
-        android:id="@+id/btnClickMulti2"
+        android:id="@+id/buttonGoToActivity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:text="Button"
+        android:text="Go to Activity"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnClickMulti1" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoadByUrl" />
 
-    <Button
-        android:id="@+id/btnClickMulti3"
-        android:layout_width="0dp"
+    <ImageView
+        android:id="@+id/imageViewLoadedByUrl"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnClickMulti2" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonGoToActivity" />
 </androidx.constraintlayout.widget.ConstraintLayout>
